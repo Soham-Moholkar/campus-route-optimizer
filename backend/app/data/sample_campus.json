@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    {"id": 0, "name": "Main Building", "x": 0, "y": 0},
+    {"id": 1, "name": "Library", "x": 200, "y": 50},
+    {"id": 2, "name": "Science Block", "x": 100, "y": 200},
+    {"id": 3, "name": "Engineering Wing", "x": 300, "y": 150},
+    {"id": 4, "name": "Admin Block", "x": 150, "y": 350}
+  ],
+  "edges": [
+    {"u": 0, "v": 1, "distance": 206, "base_weight": 206},
+    {"u": 1, "v": 0, "distance": 206, "base_weight": 206},
+    {"u": 0, "v": 2, "distance": 223, "base_weight": 223},
+    {"u": 2, "v": 0, "distance": 223, "base_weight": 223},
+    {"u": 1, "v": 3, "distance": 141, "base_weight": 141},
+    {"u": 3, "v": 1, "distance": 141, "base_weight": 141},
+    {"u": 2, "v": 4, "distance": 158, "base_weight": 158},
+    {"u": 4, "v": 2, "distance": 158, "base_weight": 158},
+    {"u": 3, "v": 4, "distance": 223, "base_weight": 223},
+    {"u": 4, "v": 3, "distance": 223, "base_weight": 223}
+  ],
+  "rooms": [
+    {"id": 0, "building_id": 0, "capacity": 100, "name": "Main-R1"},
+    {"id": 1, "building_id": 0, "capacity": 150, "name": "Main-R2"},
+    {"id": 2, "building_id": 1, "capacity": 80, "name": "Library-R1"},
+    {"id": 3, "building_id": 2, "capacity": 120, "name": "Science-R1"},
+    {"id": 4, "building_id": 3, "capacity": 60, "name": "Engineering-R1"},
+    {"id": 5, "building_id": 4, "capacity": 50, "name": "Admin-R1"}
+  ]
+}
